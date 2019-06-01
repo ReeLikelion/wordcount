@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <style type="text/css">
+            #a{
+                text-align: center;
+            }
+            #b{
+                padding: 15px;
+            }
+        </style>
+    </head>
+<div id = "wrap">
+        <meta name="viewport" content="width=device-width, initial-scale=1
+        ,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="{% static 'css/font.css'%}">
+        <title>WordCount_GeonRyun</title>
+        <h4 id ="b">만든이-이건륜</h4>
+
+<h5>기사에서 가장 많이 사용된 단어를 찾고, 요즘 이슈를 파악할 수 있게 합니다.</h5>
+<h5>또한 활력을 줍니다.</h5><br>
+<div id="a">
+        <img src="{% static 'css/hwalyuk.jpg'%}">
+</div>
+
+<h2 id="a"><a href="{%url 'home'%}">Home으로 돌아가기</a> </h2>   
+</div>
+</html>

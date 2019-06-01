@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+    <div id="wrap">
+    <head>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <style type="text/css">
+            #a{
+                text-align: center;
+            }
+            #b{
+                padding: 40px;
+            }
+            #c{
+                text-align: center;
+                padding:30px;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1
+        ,maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="{% static 'css/font.css'%}">
+        <title>WordCount_GeonRyun</title>
+        <style type="text/css">
+            a:link{color:red; text-decoration: none;}
+            a:visited{color:black; text-decoration: none;}
+            a:hover{color:blue; text-decoration:underline;}
+        </style>
+        <div>
+                <body>
+                    <div style="line-height:10%">   
+                        <h1 id="b">WordCount?</h1><br>
+                        <h1>No! Check Issue!</h1><br>
+                    </div>
+                </body>
+        </div>
+    </head>
+    <h2 id="a">
+        <a href="{%url 'about'%}">만든이(이건륜)</a>
+    </h2> 
+    <h3>Let's Do It!!!</h3>
+    <form action="{% url 'result'%}">
+        <div id="a">
+        <textarea cols="80" rows="20" name="fulltext"  ></textarea>
+        </div>
+        <br>
+        <div id="c">
+        <input type="submit" value="count" style="width: 100px; height:100px; font-size:50px">
+        </div>
+    
+    </form>
+</div>
+</html>
